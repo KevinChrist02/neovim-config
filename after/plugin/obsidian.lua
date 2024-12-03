@@ -5,6 +5,10 @@ require("obsidian").setup({
             name = "personal",
             path = "~/vaults/personal",
         },
+        {
+            name = "uni",
+            path = "~/vaults/uni",
+        }
     },
     notes_subdir = "notes",
     daily_notes = {
