@@ -55,5 +55,7 @@ return require('packer').startup(function(use)
 
     use('nvim-tree/nvim-web-devicons')
 
-    use('mrcjkb/rustaceanvim')
+    use('MunifTanjim/nui.nvim')
+    use('rcarriga/nvim-notify')
+    use('folke/noice.nvim')
 end)

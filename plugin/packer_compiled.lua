@@ -119,6 +119,16 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -128,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -161,11 +176,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
-  rustaceanvim = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/rustaceanvim",
-    url = "https://github.com/mrcjkb/rustaceanvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -189,14 +199,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: obsidian.nvim
-time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\n(\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\robsidian\frequire\0", "config", "obsidian.nvim")
-time([[Config for obsidian.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: obsidian.nvim
+time([[Config for obsidian.nvim]], true)
+try_loadstring("\27LJ\2\n(\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\robsidian\frequire\0", "config", "obsidian.nvim")
+time([[Config for obsidian.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
