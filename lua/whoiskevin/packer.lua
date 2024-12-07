@@ -77,4 +77,9 @@ return require('packer').startup(function(use)
     -- sodoku
     use { 'jim-fx/sudoku.nvim' }
     use { 'ThePrimeagen/vim-be-good' }
+
+    use {
+        'alanfortlink/blackjack.nvim',
+        requires = { 'nvim-lua/plenary.nvim' },
+    }
 end)
