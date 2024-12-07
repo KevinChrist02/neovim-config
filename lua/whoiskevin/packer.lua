@@ -72,4 +72,9 @@ return require('packer').startup(function(use)
     use('MunifTanjim/nui.nvim')
     use('rcarriga/nvim-notify')
     use('folke/noice.nvim')
+
+
+    -- sodoku
+    use { 'jim-fx/sudoku.nvim' }
+    use { 'ThePrimeagen/vim-be-good' }
 end)
