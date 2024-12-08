@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "ellisonleao/gruvbox.nvim",
+        "rebelot/kanagawa.nvim",
         config = function()
-            vim.cmd [[colorscheme gruvbox]]
+            vim.cmd [[colorscheme kanagawa]]
         end
     })
 
@@ -29,19 +29,6 @@ return require('packer').startup(function(use)
     use("saadparwaiz1/cmp_luasnip")
     use('L3MON4D3/LuaSnip')
 
-    use({
-        "epwalsh/obsidian.nvim",
-        tag = "*",
-        ui = {
-            enable = false,
-        },
-        requires = {
-            "nvim-lua/plenary.nvim"
-        },
-        config = function()
-            require('obsidian')
-        end
-    })
     use({
         'MeanderingProgrammer/render-markdown.nvim',
         after = { 'nvim-treesitter' },
@@ -68,18 +55,4 @@ return require('packer').startup(function(use)
     }
 
     use('nvim-tree/nvim-web-devicons')
-
-    use('MunifTanjim/nui.nvim')
-    use('rcarriga/nvim-notify')
-    use('folke/noice.nvim')
-
-
-    -- sodoku
-    use { 'jim-fx/sudoku.nvim' }
-    use { 'ThePrimeagen/vim-be-good' }
-
-    use {
-        'alanfortlink/blackjack.nvim',
-        requires = { 'nvim-lua/plenary.nvim' },
-    }
 end)

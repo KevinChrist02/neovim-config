@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["blackjack.nvim"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/blackjack.nvim",
-    url = "https://github.com/alanfortlink/blackjack.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -105,16 +100,16 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/glow.nvim",
     url = "https://github.com/ellisonleao/glow.nvim"
   },
-  ["gruvbox.nvim"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["kanagawa.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["live-server.nvim"] = {
     loaded = true,
@@ -136,16 +131,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["noice.nvim"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
-  },
-  ["nui.nvim"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -156,11 +141,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -170,12 +150,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["obsidian.nvim"] = {
-    config = { "\27LJ\2\n(\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\robsidian\frequire\0" },
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
-    url = "https://github.com/epwalsh/obsidian.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -195,11 +169,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/opt/render-markdown.nvim",
     url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
   },
-  ["sudoku.nvim"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/sudoku.nvim",
-    url = "https://github.com/jim-fx/sudoku.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -215,11 +184,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/vim-be-good",
-    url = "https://github.com/ThePrimeagen/vim-be-good"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -232,14 +196,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for glow.nvim]], true)
 try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0", "config", "glow.nvim")
 time([[Config for glow.nvim]], false)
--- Config for: gruvbox.nvim
-time([[Config for gruvbox.nvim]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox.nvim")
-time([[Config for gruvbox.nvim]], false)
--- Config for: obsidian.nvim
-time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\n(\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\robsidian\frequire\0", "config", "obsidian.nvim")
-time([[Config for obsidian.nvim]], false)
+-- Config for: kanagawa.nvim
+time([[Config for kanagawa.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0", "config", "kanagawa.nvim")
+time([[Config for kanagawa.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
