@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "rebelot/kanagawa.nvim",
+        "loctvl842/monokai-pro.nvim",
         config = function()
-            vim.cmd [[colorscheme kanagawa]]
+            vim.cmd [[colorscheme monokai-pro]]
         end
     })
 
@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
     }
 
     use('nvim-tree/nvim-web-devicons')
+
+    use('ThePrimeagen/vim-be-good')
 end)
