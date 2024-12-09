@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "loctvl842/monokai-pro.nvim",
+        "catppuccin/nvim",
         config = function()
-            vim.cmd [[colorscheme monokai-pro]]
+            vim.cmd [[colorscheme catppuccin-latte]]
         end
     })
 
