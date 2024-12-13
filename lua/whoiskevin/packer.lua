@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "catppuccin/nvim",
+        "ellisonleao/gruvbox.nvim",
         config = function()
-            vim.cmd [[colorscheme catppuccin-latte]]
+            vim.cmd [[colorscheme gruvbox]]
         end
     })
 
