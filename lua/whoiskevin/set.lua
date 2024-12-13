@@ -8,7 +8,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = fale
+vim.opt.wrap = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
