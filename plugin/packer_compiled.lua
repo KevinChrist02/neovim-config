@@ -94,12 +94,6 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["glow.nvim"] = {
-    config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0" },
-    loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/glow.nvim",
-    url = "https://github.com/ellisonleao/glow.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -125,6 +119,16 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -134,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -145,6 +154,12 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme onedark\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -155,11 +170,12 @@ _G.packer_plugins = {
     path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["solarized-osaka.nvim"] = {
-    config = { "\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme solarized-osaka\bcmd\bvim\0" },
+  ["render-markdown.nvim"] = {
+    load_after = {},
     loaded = true,
-    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
+    needs_bufread = false,
+    path = "/home/whoiskevin/.local/share/nvim/site/pack/packer/opt/render-markdown.nvim",
+    url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -189,14 +205,15 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: glow.nvim
-time([[Config for glow.nvim]], true)
-try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0", "config", "glow.nvim")
-time([[Config for glow.nvim]], false)
--- Config for: solarized-osaka.nvim
-time([[Config for solarized-osaka.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme solarized-osaka\bcmd\bvim\0", "config", "solarized-osaka.nvim")
-time([[Config for solarized-osaka.nvim]], false)
+-- Config for: onedark.nvim
+time([[Config for onedark.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme onedark\bcmd\bvim\0", "config", "onedark.nvim")
+time([[Config for onedark.nvim]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd render-markdown.nvim ]]
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

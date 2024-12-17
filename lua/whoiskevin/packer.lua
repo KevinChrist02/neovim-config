@@ -11,10 +11,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "craftzdog/solarized-osaka.nvim",
-        --"ellisonleao/gruvbox.nvim",
+        'navarasu/onedark.nvim',
         config = function()
-            vim.cmd [[colorscheme solarized-osaka]]
+            vim.cmd [[colorscheme onedark]]
         end
     })
 
@@ -30,9 +29,6 @@ return require('packer').startup(function(use)
     use("saadparwaiz1/cmp_luasnip")
     use('L3MON4D3/LuaSnip')
 
-
-    use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
-
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
@@ -40,12 +36,37 @@ return require('packer').startup(function(use)
     use('barrett-ruth/live-server.nvim')
     use('xiyaowong/transparent.nvim')
 
+    use('nvim-tree/nvim-web-devicons')
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
-    use('nvim-tree/nvim-web-devicons')
+    use({
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = { 'nvim-treesitter' },
+        --requires = { 'echasnovski/mini.nvim', opt = true }, -- if you use the mini.nvim suite
+        -- requires = { 'echasnovski/mini.icons', opt = true }, -- if you use standalone mini plugins
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }, -- if you prefer nvim-web-devicons
+    })
+
+    use 'rcarriga/nvim-notify'
+    use 'MunifTanjim/nui.nvim'
+
+    use {
+        "folke/noice.nvim",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    }
 
     use('ThePrimeagen/vim-be-good')
 end)
