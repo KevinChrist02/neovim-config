@@ -73,6 +73,13 @@ return{
                 capabilities = require('cmp_nvim_lsp').default_capabilities(),
             })
             lspconfig.svelte.setup({})
+            lspconfig.rust_analyzer.setup({
+                on_attach = function (client,bufnr)end
+            })
+            lspconfig.html.setup({})
+            lspconfig.emmet_language_server.setup({})
+            lspconfig.cssls.setup({})
+            lspconfig.gopls.setup({})
         end,
 
     }

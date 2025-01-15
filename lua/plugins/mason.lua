@@ -19,7 +19,11 @@ return{
         config = function()
             require("mason").setup()
             require("mason-lspconfig").setup {
-                ensure_installed = { "lua_ls", "ts_ls", "svelte"},
+                ensure_installed = 
+                { 
+                    "lua_ls", "ts_ls", "svelte",
+                    "rust_analyzer", "gopls",
+                },
             }
         end,
     },
