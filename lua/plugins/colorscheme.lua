@@ -1,9 +1,9 @@
 return{
     {
-        "ellisonleao/gruvbox.nvim",
+        "folke/tokyonight.nvim",
         config = function ()
-            require("gruvbox").setup({})
-            vim.cmd.colorscheme("gruvbox")
+            require("tokyonight").setup({})
+            vim.cmd.colorscheme("tokyonight-day")
         end,
     },
 }

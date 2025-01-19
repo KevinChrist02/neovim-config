@@ -23,7 +23,7 @@ return{
                         path = "~/vaults/uni",
                     },
                 },
-
+                ui = { enable = false },
                 daily_notes = {
                     folder = "/dailies",
                     date_format = "%d-%m-%Y",
