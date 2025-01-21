@@ -28,6 +28,18 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- no arrow keys 
+
+local modes = { 'n', 'i', 'v' }
+local opts = { noremap = true, silent = true }
+
+local keys = { '<Up>', '<Down>', '<Left>', '<Right>' }
+for _, mode in ipairs(modes) do
+  for _, key in ipairs(keys) do
+    vim.keymap.set(mode, key, '<Nop>', opts)
+  end
+end
+
 -- vim.opt
 vim.opt.nu = true
 vim.opt.relativenumber = true
