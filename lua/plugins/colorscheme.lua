@@ -4,7 +4,10 @@ return{
         lazy = false,
         priority = 1000,
         config = function ()
-            require("dracula").setup({})
+            local dracula = require("dracula")
+            dracula.setup({
+                transparent_bg = true,
+            })
             vim.cmd.colorscheme "dracula"
         end,
     },
