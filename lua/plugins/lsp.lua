@@ -75,9 +75,7 @@ return{
             lspconfig.rust_analyzer.setup({
                 on_attach = function (client,bufnr)end
             })
-            lspconfig.html.setup({})
-            lspconfig.emmet_language_server.setup({})
-            lspconfig.cssls.setup({})
+            lspconfig.marksman.setup({})
         end,
 
     }
